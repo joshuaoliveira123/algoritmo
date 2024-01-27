@@ -14,7 +14,7 @@ programa {
     escreva("Você quer a AREA do circulo? [S/N]")
     leia(resposta)
 
-    se(resposta == "S") {
+    se(resposta == "S" ou resposta == "s") {
       area = math.potencia(raio, 2) * math.PI
 
       escreva("A AREA do circulo é igual a ", math.arredondar(area, 2), " unidades.")
