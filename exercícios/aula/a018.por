@@ -15,7 +15,7 @@ programa {
     escreva("IMC: ", math.arredondar(imc, 2), "\n")
     
     se(imc < 17){
-      escreva("Tu ta passando fome? Muito MAGRO, desnutrido, tu vai morrer logo logo ...")
+      escreva("Tu ta passando fome? MUITO MAGRO, desnutrido, tu vai morrer logo logo ...")
     } senao se(imc >= 17 e imc < 18.5) {
       escreva("Você está abaixo do peso ideal.")
     } senao se(imc >= 18.5 e imc < 25) {
