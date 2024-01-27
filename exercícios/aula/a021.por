@@ -5,11 +5,11 @@ programa {
     real salario, novo_salario
     inteiro depe
 
-    escreva("Nome do Funcionário: ")
+    escreva("Nome do Funcionï¿½rio: ")
     leia(nome)
-    escreva("Salário do Funcionário (R$): ")
+    escreva("Salï¿½rio do Funcionï¿½rio (R$): ")
     leia(salario)
-    escreva("Quantidade de Dependentes do Funcionário: ")
+    escreva("Quantidade de Dependentes do Funcionï¿½rio: ")
     leia(depe)
 
     escolha(salario) {
@@ -19,7 +19,7 @@ programa {
       
       caso contrario:
         se(salario < 0) {
-          escreva("Salário negativo? Ta devendo pro agiota é?\n")
+          escreva("Salï¿½rio negativo? Ta devendo pro agiota ï¿½?\n")
         }
     }
 
@@ -40,12 +40,12 @@ programa {
         se(depe > 6) {
           novo_salario = salario * 1.5
         } senao {
-          escreva("Parceiro, acho que tu digitou errado o número viu ...\nSão ", depe, " pessoas dependentes?")
+          escreva("Parceiro, acho que tu digitou errado o nï¿½mero viu ...\nSï¿½o ", depe, " pessoas dependentes?")
         }
       pare
     }
     se(depe > 0 e salario > 0) {
-      escreva("Certo senhor(a) ", nome, " seu novo salário é de R$ ", novo_salario)
+      escreva("Certo senhor(a) ", nome, " seu novo salï¿½rio ï¿½ de R$ ", math.arredondar(novo_salario, 2))
     }
   }
 }
