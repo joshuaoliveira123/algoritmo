@@ -16,9 +16,10 @@ programa {
     }
 
     ganho = pontos_hora * horas
-    
+
     receber = ganho * 0.05
 
+    escreva("Você arrecadou um total de ", ganho, " pontos\n")
     escreva("O total a receber é de R$ ", m.arredondar(receber, 2))
     
   }
