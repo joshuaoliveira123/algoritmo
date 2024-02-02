@@ -7,7 +7,7 @@ programa {
     impar = 0
 
     enquanto(c <= 6) {
-      escreva("Escreva o ", c, "º número: ")
+      escreva("Escreva o ", c, "ï¿½ nï¿½mero: ")
       leia(num)
 
       se(num % 2 == 0){
@@ -19,8 +19,8 @@ programa {
       c = c + 1
     }
 
-    escreva("Quantida de números PARES: ", par, "\n")
-    escreva("Quantida de números IMPARES: ", impar)
+    escreva("Quantidade de nï¿½meros PARES: ", par, "\n")
+    escreva("Quantidade de nï¿½meros IMPARES: ", impar)
 
   }
 }
