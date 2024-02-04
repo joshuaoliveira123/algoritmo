@@ -1,19 +1,33 @@
+// 37) Uma empresa precisa reajustar o salÃ¡rio dos seus funcionÃ¡rios, dando um 
+// aumento de acordo com alguns fatores. FaÃ§a um programa que leia o salÃ¡rio atual, 
+// o gÃªnero do funcionÃ¡rio e hÃ¡ quantos anos esse funcionÃ¡rio trabalha na empresa. 
+// No final, mostre o seu novo salÃ¡rio, baseado na tabela a seguir: 
+//  
+// - Mulheres 
+  // - menos de 15 anos de empresa: +5% 
+  // - de 15 atÃ© 20 anos de empresa: +12% 
+  // - mais de 20 anos de empresa: +23% 
+// - Homens 
+  // - menos de 20 anos de empresa: +3% 
+  // - de 20 atÃ© 30 anos de empresa: +13% 
+  // - mais de 30 anos de empresa: +25%
+
 programa{
   funcao inicio() {
     cadeia nome, sexo
     inteiro anos
     real sal, novo_sal, aumento
 
-    escreva("Digite o nome do funcionário: \n")
+    escreva("Digite o nome do funcionï¿½rio: \n")
     escreva("> ")
     leia(nome)
-    escreva("Digite o sexo do funcionário [M/F]: \n")
+    escreva("Digite o sexo do funcionï¿½rio [M/F]: \n")
     escreva("> ")
     leia(sexo)
-    escreva("Digite quantos anos esse funcionário contribuiu para a empresa: \n")
+    escreva("Digite quantos anos esse funcionï¿½rio contribuiu para a empresa: \n")
     escreva("> ")
     leia(anos)
-    escreva("Digite o salário do funcionário(R$): \n")
+    escreva("Digite o salï¿½rio do funcionï¿½rio(R$): \n")
     escreva("> ")
     leia(sal)
 
@@ -36,15 +50,15 @@ programa{
         }
       }
     } senao {
-      escreva("Sexo inválido\n")
-      escreva("Sem aumento de salário para ", sexo, "\n")
+      escreva("Sexo invï¿½lido\n")
+      escreva("Sem aumento de salï¿½rio para ", sexo, "\n")
 
       aumento = 0
     }
 
     novo_sal = sal + aumento
 
-    escreva("O funcionário ", nome," teve um aumento de R$ ", aumento, "\n")
-    escreva("O novo salário do funcionario é de R$ ", novo_sal)
+    escreva("O funcionï¿½rio ", nome," teve um aumento de R$ ", aumento, "\n")
+    escreva("O novo salï¿½rio do funcionario ï¿½ de R$ ", novo_sal)
   }
 }

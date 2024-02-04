@@ -1,3 +1,10 @@
+// 3) Crie um programa que leia o nome e o salÃ¡rio de um funcionÃ¡rio, mostrando no 
+// final uma mensagem. 
+// Ex: 
+// Nome do FuncionÃ¡rio: Maria do Carmo 
+// SalÃ¡rio: 1850,45 
+// O funcionÃ¡rio Maria do Carmo tem um salÃ¡rio de R$1850,45 em Junho. 
+
 programa {
   cadeia nome
   real salario
@@ -6,9 +13,9 @@ programa {
     escreva("Digite seu nome: ")
     leia(nome)
 
-    escreva("Digite seu salário, em reais, no ultimo mês: ")
+    escreva("Digite seu salï¿½rio, em reais, no ultimo mï¿½s: ")
     leia(salario)
 
-    escreva("Então, senhor(a) ", nome, ", no ultimo mês você ganhou R$", salario)
+    escreva("Entï¿½o, senhor(a) ", nome, ", no ultimo mï¿½s vocï¿½ ganhou R$", salario)
   }
 }

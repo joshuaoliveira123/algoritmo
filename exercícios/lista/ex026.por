@@ -1,18 +1,24 @@
+// 26) Escreva um algoritmo que leia dois nÃºmeros inteiros e compare-os, mostrando 
+// na tela uma das mensagens abaixo: 
+  //  - O primeiro valor Ã© o maior 
+  //  - O segundo valor Ã© o maior 
+  //  - NÃ£o existe valor maior, os dois sÃ£o iguais
+
 programa {
   funcao inicio() {
     inteiro n1, n2
 
-    escreva("Digite um número: ")
+    escreva("Digite um nï¿½mero: ")
     leia(n1)
-    escreva("Digite outro número: ")
+    escreva("Digite outro nï¿½mero: ")
     leia(n2)
 
     se(n1 == n2) {
-      escreva("Os números são iguais!")
+      escreva("Os nï¿½meros sï¿½o iguais!")
     } senao se(n1 < n2) {
-      escreva("O ", n2, " é maior que ", n1)
+      escreva("O ", n2, " ï¿½ maior que ", n1)
     } senao {
-      escreva("O ", n1, " é maior que ", n2)
+      escreva("O ", n1, " ï¿½ maior que ", n2)
     }
     
   }

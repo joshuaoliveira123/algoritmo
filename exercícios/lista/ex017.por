@@ -1,3 +1,7 @@
+// 17) Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse 
+// 80Km/h, exiba uma mensagem dizendo que o usuÃ¡rio foi multado. Nesse caso, exiba 
+// o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+
 programa {
   funcao inicio() {
     inteiro km, multa
@@ -8,10 +12,10 @@ programa {
     se(km > 80) {
       multa = (km - 80) * 5
 
-      escreva("Rapido demais, você foi multado em R$ ", multa, "\n")
+      escreva("Rapido demais, vocï¿½ foi multado em R$ ", multa, "\n")
     }
 
-    escreva("Tenha um ótimo dia senhor(a).")
+    escreva("Tenha um ï¿½timo dia senhor(a).")
     
   }
 }

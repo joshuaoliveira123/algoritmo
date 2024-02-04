@@ -1,3 +1,10 @@
+// 53) FaÃ§a um programa que leia a idade e o sexo de 5 pessoas, mostrando no final: 
+//  a) Quantos homens foram cadastrados 
+//  b) Quantas mulheres foram cadastradas 
+//  c) A mÃ©dia de idade do grupo 
+//  d) A mÃ©dia de idade dos homens 
+//  e) Quantas mulheres tem mais de 20 anos
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -14,13 +21,13 @@ programa {
     num_mulheres_maior_20 = 0
 
     enquanto(c <= 5) {
-      escreva("Digite a idade da ", c,"ª pessoa: ")
+      escreva("Digite a idade da ", c,"ï¿½ pessoa: ")
       leia(idade)
 
-      escreva("Escolha gênero: \n")
+      escreva("Escolha gï¿½nero: \n")
       escreva("[1] - Masculino\n")
       escreva("[2] - Feminino\n")
-      escreva("[~] - Outro/prefiro não dizer\n")
+      escreva("[~] - Outro/prefiro nï¿½o dizer\n")
       escreva("> ")
       leia(n)
 
@@ -34,7 +41,7 @@ programa {
         pare
 
         caso contrario:
-          escreva("Qual seu gênero? (caso não tenha, não digite nada)\n")
+          escreva("Qual seu gï¿½nero? (caso nï¿½o tenha, nï¿½o digite nada)\n")
           escreva("> ")
           leia(sexo)
       }
@@ -61,9 +68,9 @@ programa {
 
     escreva("Homens cadastrados: ", homens, "\n")
     escreva("Mulheres cadastradas: ", mulheres, "\n")
-    escreva("Média de idade do grupo: ", m.arredondar(media_idade, 1), "\n")
-    escreva("Média de idade dos Homens: ", m.arredondar(media_idade_homens, 1), "\n")
-    escreva("Número de mulheres com mais de 20 anos: ", num_mulheres_maior_20)
+    escreva("Mï¿½dia de idade do grupo: ", m.arredondar(media_idade, 1), "\n")
+    escreva("Mï¿½dia de idade dos Homens: ", m.arredondar(media_idade_homens, 1), "\n")
+    escreva("Nï¿½mero de mulheres com mais de 20 anos: ", num_mulheres_maior_20)
 
   }
 }

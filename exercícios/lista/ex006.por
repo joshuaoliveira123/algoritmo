@@ -1,12 +1,19 @@
+// 6) FaÃ§a um programa que leia um nÃºmero inteiro e mostre o seu antecessor e seu 
+// sucessor. 
+// Ex:  
+// Digite um nÃºmero: 9 
+// O antecessor de 9 Ã© 8 
+// O sucessor de 9 Ã© 10
+
 programa {
   inteiro numero, a, s
   funcao inicio() {
-    escreva("Digite um número: ")
+    escreva("Digite um nï¿½mero: ")
     leia(numero)
 
     a = numero - 1
     s = numero + 1
 
-    escreva("O sucessor de ", numero, " é ", s, " enquanto seu antecessor é ", a)
+    escreva("O sucessor de ", numero, " ï¿½ ", s, " enquanto seu antecessor ï¿½ ", a)
   }
 }

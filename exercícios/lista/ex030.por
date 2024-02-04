@@ -1,3 +1,9 @@
+// 30) [DESAFIO] RefaÃ§a o algoritmo 25, acrescentando o recurso de mostrar que tipo 
+// de triÃ¢ngulo serÃ¡ formado:  
+  //  - EQUILÃTERO: todos os lados iguais 
+  //  - ISÃ“SCELES: dois lados iguais 
+  //  - ESCALENO: todos os lados diferentes
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -16,11 +22,11 @@ programa {
       tri = "PODE"
       t = verdadeiro
     } senao {
-      tri = "NÃO PODE"
+      tri = "Nï¿½O PODE"
       t = falso
     }
 
-    escreva("A figura composta por l1, l2 e l3 ", tri, " formar um triângulo\n")
+    escreva("A figura composta por l1, l2 e l3 ", tri, " formar um triï¿½ngulo\n")
 
     se(t == verdadeiro) {
       se(l1 == l2 e l2 == l3 e l3 == l1) {
@@ -30,7 +36,7 @@ programa {
     } senao {
       tipo = "ESCALENO"
     }
-    escreva("O triângulo formado seria ", tipo)
+    escreva("O triï¿½ngulo formado seria ", tipo)
     }
   }
 }

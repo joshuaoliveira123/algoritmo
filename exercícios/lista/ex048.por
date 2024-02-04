@@ -1,3 +1,6 @@
+// 48) Fa√ßa um programa que leia 7 n√∫meros inteiros e no final mostre o somat√≥rio 
+// entre eles.
+
 programa {
   funcao inicio() {
     inteiro c, soma, num
@@ -6,7 +9,7 @@ programa {
     soma = 0
 
     enquanto(c <= 7) {
-      escreva("Escreva o ", c, "∫ n˙mero: ")
+      escreva("Escreva o ", c, "ÔøΩ nÔøΩmero: ")
       leia(num)
 
       soma = soma + num

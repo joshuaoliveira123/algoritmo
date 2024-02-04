@@ -1,3 +1,6 @@
+// 32) [DESAFIO] Crie um jogo onde o computador vai sortear um nÃºmero entre 1 e 5 o 
+// jogador vai tentar descobrir qual foi o valor sorteado.
+
 programa {
   inclua biblioteca Util --> u
   funcao inicio() {
@@ -6,19 +9,19 @@ programa {
     a = u.sorteia(1,5)
     
     escreva("+----------------------------+\n")
-    escreva("       Advinhe o número       \n")
+    escreva("       Advinhe o nï¿½mero       \n")
     escreva("+----------------------------+\n\n")
     
-    escreva("Digite um número de 1 a 5: ")
+    escreva("Digite um nï¿½mero de 1 a 5: ")
     leia(num)
 
-      escreva("CPU escolheu o número ", a, "\n")
-      escreva("Você escolheu o número ", num, "\n")
+      escreva("CPU escolheu o nï¿½mero ", a, "\n")
+      escreva("Vocï¿½ escolheu o nï¿½mero ", num, "\n")
 
     se(num == a) {
-      escreva("Parabéns, você acertou o número!")
+      escreva("Parabï¿½ns, vocï¿½ acertou o nï¿½mero!")
     } senao {
-      escreva("Você ERROU, tente novamente.")
+      escreva("Vocï¿½ ERROU, tente novamente.")
     }
 
   }

@@ -1,3 +1,6 @@
+// 18) FaÃ§a um programa que leia o ano de nascimento de uma pessoa, calcule a idade 
+// dela e depois mostre se ela pode ou nÃ£o votar.
+
 programa {
   funcao inicio() {
     inteiro idade, ano, nasc
@@ -5,17 +8,17 @@ programa {
     escreva("Em que ano estamos: ")
     leia(ano)
 
-    escreva("Em que ano você nasceu: ")
+    escreva("Em que ano vocï¿½ nasceu: ")
     leia(nasc)
 
     idade = ano - nasc
 
-    escreva("Você tem ", idade, " anos de idade.\n")
+    escreva("Vocï¿½ tem ", idade, " anos de idade.\n")
 
     se(idade >= 18){
-      escreva("Parece que você ja tem idade o suficiente para votar.")
+      escreva("Parece que vocï¿½ ja tem idade o suficiente para votar.")
     } senao {
-      escreva("Não pode votar ainda ... você é menor de idade.")
+      escreva("Nï¿½o pode votar ainda ... vocï¿½ ï¿½ menor de idade.")
     }
     
   }

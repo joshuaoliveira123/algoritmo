@@ -1,18 +1,25 @@
+// 22) Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua 
+// situa√ß√£o em rela√ß√£o ao alistamento militar. 
+  //  - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o 
+// alistamento. 
+  //  - Se j√° tiver depois dos 18 anos, mostre quantos anos j√° se passaram do 
+// alistamento. 
+
 programa {
   funcao inicio() {
     inteiro anos, faltam_anos, sobra_anos
 
-    escreva("Quantos anos vocÍ tem: ")
+    escreva("Quantos anos vocÔøΩ tem: ")
     leia(anos)
 
     se(anos < 18){
       faltam_anos = 18 - anos
 
-      escreva("Faltam ", faltam_anos, " ano(s) para vocÍ atingir a maior idade.")
+      escreva("Faltam ", faltam_anos, " ano(s) para vocÔøΩ atingir a maior idade.")
     } senao{
       sobra_anos = anos - 18
 
-      escreva("VocÍ ja È maior de idade a ", sobra_anos, " ano(s).")
+      escreva("VocÔøΩ ja ÔøΩ maior de idade a ", sobra_anos, " ano(s).")
     }
     
   }

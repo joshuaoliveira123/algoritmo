@@ -1,15 +1,27 @@
+// 8) Desenvolva um programa que leia uma distÃ¢ncia em metros e mostre os valores 
+// relativos em outras medidas. 
+// Ex:  
+// Digite uma distÃ¢ncia em metros: 185.72 
+// A distÃ¢ncia de 85.7m corresponde a: 
+// 0.18572Km 
+// 1.8572Hm 
+// 18.572Dam 
+// 1857.2dm 
+// 18572.0cm 
+// 185720.0mm 
+
 programa {
   funcao inicio() {
     real distancia, km, cm, mm
 
-    escreva("Digite uma distância em metros: ")
+    escreva("Digite uma distï¿½ncia em metros: ")
     leia(distancia)
 
     km = distancia / 1000
     cm = distancia * 100
     mm = distancia * 10
 
-    escreva("Sua distância, ", distancia, " metros, em:\n")
+    escreva("Sua distï¿½ncia, ", distancia, " metros, em:\n")
     escreva("km: ", km, "\n")
     escreva("cm: ", cm, "\n")
     escreva("mm: ", mm, "\n")

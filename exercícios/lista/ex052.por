@@ -1,3 +1,9 @@
+// 52) Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final: 
+//  a) Qual Ã© a mÃ©dia de idade do grupo 
+//  b) Quantas pessoas tem mais de 18 anos 
+//  c) Quantas pessoas tem menos de 5 anos 
+//  d) Qual foi a maior idade lida
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -11,7 +17,7 @@ programa {
     menor_5 = 0
 
     enquanto(c <= 10) {
-      escreva("Digite a idade da ", c,"ª pessoa: ")
+      escreva("Digite a idade da ", c,"ï¿½ pessoa: ")
       leia(idade)
 
       idade_2 = idade_2 + idade
@@ -33,7 +39,7 @@ programa {
       c = c + 1
     }
 
-    escreva("A MÉDIA de idade do grupo é ", media_idade, " anos de idade;\n")
+    escreva("A Mï¿½DIA de idade do grupo ï¿½ ", media_idade, " anos de idade;\n")
     escreva("Existe(m) ", maior_18, " pessoa(s) com MAIS de 18 anos de idade;\n")
     escreva("Existe(m) ", menor_5, " pessoa(s) com MENOS de 5 anos de idade; e\n")
     escreva("A pessoa MAIS VELHA do grupo tem ", maior, " anos de idade.\n")

@@ -1,3 +1,7 @@
+// 10) FaÃ§a um algoritmo que leia a largura e altura de uma parede, calcule e 
+// mostre a Ã¡rea a ser pintada e a quantidade de tinta necessÃ¡ria para o serviÃ§o, 
+// sabendo que cada litro de tinta pinta uma Ã¡rea de 2metros quadrados.
+
 programa {
   funcao inicio() {
     real largura, altura, area, tinta
@@ -12,6 +16,6 @@ programa {
 
     tinta = area / 2
 
-    escreva("Saindo de um pressuposto que a cada 2 m² equivale a 1 litro de tinta.\nSerá necessário ", tinta, " litros de tinta para pintar uma parede de ", area, " m² de área.")
+    escreva("Saindo de um pressuposto que a cada 2 mï¿½ equivale a 1 litro de tinta.\nSerï¿½ necessï¿½rio ", tinta, " litros de tinta para pintar uma parede de ", area, " mï¿½ de ï¿½rea.")
   }
 }

@@ -1,16 +1,20 @@
+// 15) Crie um programa que leia o nÃºmero de dias trabalhados em um mÃªs e mostre o 
+// salÃ¡rio de um funcionÃ¡rio, sabendo que ele trabalha 8 horas por dia e ganha R$25 
+// por hora trabalhada.
+
 programa {
   inclua biblioteca Matematica --> math
   funcao inicio() {
     real dias, horas, salario
 
-    escreva("Quantos dias você trabalhou nesse mês?\n")
+    escreva("Quantos dias vocï¿½ trabalhou nesse mï¿½s?\n")
     leia(dias)
 
-    escreva("Qual foi a média de horas trabalhadas no mês?\n")
+    escreva("Qual foi a mï¿½dia de horas trabalhadas no mï¿½s?\n")
     leia(horas)
 
     salario = dias * (horas * 25)
 
-    escreva("O seu salário a receber é de R$ ", math.arredondar(salario, 2))
+    escreva("O seu salï¿½rio a receber ï¿½ de R$ ", math.arredondar(salario, 2))
   }
 }

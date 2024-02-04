@@ -1,16 +1,23 @@
+// 4) Desenvolva um algoritmo que leia dois nÃºmeros inteiros e mostre o somatÃ³rio 
+// entre eles. 
+// Ex: 
+// Digite um valor: 8 
+// Digite outro valor: 5 
+// A soma entre 8 e 5 Ã© igual a 13.
+
 programa {
   inteiro a, b, resultado
 
   funcao inicio() {
 
-    escreva("Digite um número: ")
+    escreva("Digite um nï¿½mero: ")
     leia(a)
-    escreva("Digite outro número: ")
+    escreva("Digite outro nï¿½mero: ")
     leia(b)
 
     resultado = a + b
 
-    escreva("A soma entre ", a, " e ", b, " é ", resultado)
+    escreva("A soma entre ", a, " e ", b, " ï¿½ ", resultado)
     
   }
 }

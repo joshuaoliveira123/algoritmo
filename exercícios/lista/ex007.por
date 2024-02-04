@@ -1,14 +1,21 @@
+// 7) Crie um algoritmo que leia um nÃºmero real e mostre na tela o seu dobro e a 
+// sua terÃ§a parte. 
+// Ex:  
+// Digite um nÃºmero: 3.5 
+// O dobro de 3.5 Ã© 7.0 
+// A terÃ§a parte de 3.5 Ã© 1.16666
+
 programa {
   funcao inicio() {
     real num, dobro, terca
 
-    escreva("Digite um número: ")
+    escreva("Digite um nï¿½mero: ")
     leia(num)
 
     dobro = num * 2
     terca = num * (1 / 3)
     
-    escreva("O dobro de ", num, " é ", dobro, "\n")
-    escreva("A terça parte de ", num, " é ", terca)
+    escreva("O dobro de ", num, " ï¿½ ", dobro, "\n")
+    escreva("A terï¿½a parte de ", num, " ï¿½ ", terca)
   }
 }

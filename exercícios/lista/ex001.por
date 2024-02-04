@@ -1,14 +1,16 @@
+// 1) Escreva um programa que mostre na tela a mensagem "OlÃ¡, Mundo!"
+
 programa {
   cadeia msg, msg2
 
   funcao inicio() {
-    escreva("Olá, Mundo! \n")
-    escreva("Me livrei da maldição. \n")
+    escreva("Olï¿½, Mundo! \n")
+    escreva("Me livrei da maldiï¿½ï¿½o. \n")
 
-    msg = ("Rapais, eu ja to errando no começo ... \n")
+    msg = ("Rapais, eu ja to errando no comeï¿½o ... \n")
     escreva(msg)
 
-    msg2 = ("Eu tive dificuldade no começo.\nSenti uma frustração bem significativa.")
+    msg2 = ("Eu tive dificuldade no comeï¿½o.\nSenti uma frustraï¿½ï¿½o bem significativa.")
     escreva("Pelo menos acertei o tipo depois de algumas tentativas. ", msg2)
   }
 }

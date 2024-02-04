@@ -1,3 +1,10 @@
+// 29) Desenvolva um programa que leia o nome de um funcionÃ¡rio, seu salÃ¡rio, 
+// quantos anos ele trabalha na empresa e mostre seu novo salÃ¡rio, reajustado de 
+// acordo com a tabela a seguir: 
+  //  - AtÃ© 3 anos de empresa: aumento de 3% 
+  //  - entre 3 e 10 anos: aumento de 12.5% 
+  //  - 10 anos ou mais: aumento de 20% 
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -6,9 +13,9 @@ programa {
 
     escreva("Digite seu nome: ")
     leia(nome)
-    escreva("Digite seu salário (R$): ")
+    escreva("Digite seu salï¿½rio (R$): ")
     leia(sal)
-    escreva("Digite quantos anos você trabalha na empresa: ")
+    escreva("Digite quantos anos vocï¿½ trabalha na empresa: ")
     leia(anos)
 
     se(anos <= 3) {
@@ -19,6 +26,6 @@ programa {
       novo_sal = sal * 1.2
     }
 
-    escreva("Senhor(a) ", nome, " seu novo sálario é de R$ ", m.arredondar(novo_sal, 2))
+    escreva("Senhor(a) ", nome, " seu novo sï¿½lario ï¿½ de R$ ", m.arredondar(novo_sal, 2))
   }
 }

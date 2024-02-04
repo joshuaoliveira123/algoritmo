@@ -1,3 +1,6 @@
+// 11) Desenvolva uma lógica que leia os valores de A, B e C de uma equação do 
+// segundo grau e mostre o valor de Delta.
+
 programa {
   inclua biblioteca Matematica --> math
 
@@ -17,7 +20,7 @@ programa {
 
     delta = math.raiz(calculo_delta, 2)
 
-    escreva("O valor de Delta � igual a ", delta)
+    escreva("O valor de Delta � igual a ", delta)
     
   }
 }

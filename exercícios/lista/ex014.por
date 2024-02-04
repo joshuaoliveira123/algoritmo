@@ -1,16 +1,21 @@
+// 14) A locadora de carros precisa da sua ajuda para cobrar seus serviÃ§os. Escreva 
+// um programa que pergunte a quantidade de Km percorridos por um carro alugado e a 
+// quantidade de dias pelos quais ele foi alugado. Calcule o preÃ§o total a pagar, 
+// sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
+
 programa {
   inclua biblioteca Matematica --> math
   funcao inicio() {
     real km, dias, total_pagar
 
-    escreva("Quantos km você rodou com o carro? ")
+    escreva("Quantos km vocï¿½ rodou com o carro? ")
     leia(km)
 
-    escreva("Digite quantos dias você usou o carro: ")
+    escreva("Digite quantos dias vocï¿½ usou o carro: ")
     leia(dias)
 
     total_pagar = (km * 0.2) + (dias * 90)
 
-    escreva("O total a pagar por usar o carro por ", dias, " dias e rodar ", km, " km é de R$ ", math.arredondar(total_pagar, 2))
+    escreva("O total a pagar por usar o carro por ", dias, " dias e rodar ", km, " km ï¿½ de R$ ", math.arredondar(total_pagar, 2))
   }
 }

@@ -1,13 +1,18 @@
+// 33) Escreva um programa para aprovar ou nÃ£o o emprÃ©stimo bancÃ¡rio para a compra 
+// de uma casa. O programa vai perguntar o valor da casa, o salÃ¡rio do comprador e 
+// em quantos anos ele vai pagar. Calcule o valor da prestaÃ§Ã£o mensal, sabendo que 
+// ela nÃ£o pode exceder 30% do salÃ¡rio ou entÃ£o o emprÃ©stimo serÃ¡ negado.
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
     real sal, preco, prest, anos, mes, preco_final
 
-    escreva("Digite o valor do imóvel (R$): ")
+    escreva("Digite o valor do imï¿½vel (R$): ")
     leia(preco)
-    escreva("Digite o seu salário (R$): ")
+    escreva("Digite o seu salï¿½rio (R$): ")
     leia(sal)
-    escreva("Digite em quantos anos você vai terminar de pagar o imóvel: ")
+    escreva("Digite em quantos anos vocï¿½ vai terminar de pagar o imï¿½vel: ")
     leia(anos)
 
     mes = anos * 12
@@ -16,14 +21,14 @@ programa {
 
     prest = preco_final / mes
 
-    escreva("Saindo o presuposto que o financiamento está a uma taxa fixa de 120% do imóvel.\n")
-    escreva("Onde cada prestação sairá por R$ ", m.arredondar(prest, 2), "\n")
+    escreva("Saindo o presuposto que o financiamento estï¿½ a uma taxa fixa de 120% do imï¿½vel.\n")
+    escreva("Onde cada prestaï¿½ï¿½o sairï¿½ por R$ ", m.arredondar(prest, 2), "\n")
 
     se(prest > (sal * 0.3)) {
-      escreva("Infelizmente, essa prestação supera os 30% do seu salário, não é indicado fazer esse financiamento.\n")
+      escreva("Infelizmente, essa prestaï¿½ï¿½o supera os 30% do seu salï¿½rio, nï¿½o ï¿½ indicado fazer esse financiamento.\n")
       escreva("Seu emprestimo foi NEGADO!")
     } senao {
-      escreva("Essa prestação cabe no seu bolso.\n")
+      escreva("Essa prestaï¿½ï¿½o cabe no seu bolso.\n")
       escreva("Seu emprestimo foi ACEITO!")
     }
   }

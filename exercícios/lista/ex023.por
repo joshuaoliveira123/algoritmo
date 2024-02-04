@@ -1,3 +1,10 @@
+// 23) Numa promoÃ§Ã£o exclusiva para o Dia da Mulher, uma loja quer dar descontos 
+// para todos, mas especialmente para mulheres. FaÃ§a um programa que leia nome, 
+// sexo e o valor das compras do cliente e calcule o preÃ§o com desconto. Sabendo 
+// que: 
+  //  - Homens ganham 5% de desconto 
+  //  - Mulheres ganham 13% de desconto
+
 programa {
   funcao inicio() {
     cadeia nome, sexo
@@ -9,7 +16,7 @@ programa {
     escreva("Sexo [M/F]:")
     leia(sexo)
 
-    escreva("Olá senhor(a) ", nome, " seja bem-vindo, quantos reias você vai gastar hoje? ")
+    escreva("Olï¿½ senhor(a) ", nome, " seja bem-vindo, quantos reias vocï¿½ vai gastar hoje? ")
     leia(gasto)
 
     se(sexo == 'M'){
@@ -19,7 +26,7 @@ programa {
     } senao {
       pagar = gasto * (1 - 0.13)
 
-      escreva("A senhora ganhou um descontão de 13% por causa do dia da mulher! O valor final da compra fica em R$ ", pagar)
+      escreva("A senhora ganhou um descontï¿½o de 13% por causa do dia da mulher! O valor final da compra fica em R$ ", pagar)
     }
     
   }

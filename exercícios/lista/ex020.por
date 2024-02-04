@@ -1,14 +1,17 @@
+// 20) Desenvolva um programa que leia um nÃºmero inteiro e mostre se ele Ã© PAR ou 
+// ÃMPAR.
+
 programa {
   funcao inicio() {
     inteiro n
 
-    escreva("Digite um número: ")
+    escreva("Digite um nï¿½mero: ")
     leia(n)
 
     se(n % 2 == 0) {
-      escreva("Seu número é PAR!")
+      escreva("Seu nï¿½mero ï¿½ PAR!")
     } senao {
-      escreva("Seu número é IMPAR!")
+      escreva("Seu nï¿½mero ï¿½ IMPAR!")
     }
   }
 }

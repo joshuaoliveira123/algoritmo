@@ -1,3 +1,9 @@
+// 50) Desenvolva um programa que faÃ§a o sorteio de 20 nÃºmeros entre 0 e 10 e 
+// mostre na tela: 
+//  a) Quais foram os nÃºmeros sorteados 
+//  b) Quantos nÃºmeros estÃ£o acima de 5 
+//  c) Quantos nÃºmeros sÃ£o divisÃ­veis por 3
+
 programa {
   inclua biblioteca Util --> u
   funcao inicio() {
@@ -9,7 +15,7 @@ programa {
 
     enquanto(c <= 10) {
       num = u.sorteia(0, 10)
-      escreva("O ", c, "º número é: ", num, "\n")
+      escreva("O ", c, "ï¿½ nï¿½mero ï¿½: ", num, "\n")
 
       se(num > 5) {
         maior_5 = maior_5 + 1
@@ -22,8 +28,8 @@ programa {
       c = c + 1
     }
 
-    escreva("Quantidade de números maiores que 5: ", maior_5, "\n")
-    escreva("Quantidade de números que são divisíveis por 3: ", divi_3)
+    escreva("Quantidade de nï¿½meros maiores que 5: ", maior_5, "\n")
+    escreva("Quantidade de nï¿½meros que sï¿½o divisï¿½veis por 3: ", divi_3)
 
   }
 }

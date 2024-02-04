@@ -1,3 +1,6 @@
+// 21) FaÃ§a um algoritmo que leia um determinado ano e mostre se ele Ã© ou nÃ£o 
+// BISSEXTO.
+
 programa {
   funcao inicio() {
     inteiro ano
@@ -6,9 +9,9 @@ programa {
     leia(ano)
 
     se(ano % 4 == 0){
-      escreva("Esse ano foi um ano bissexto. Existem exceções, pesquise.")
+      escreva("Esse ano foi um ano bissexto. Existem exceï¿½ï¿½es, pesquise.")
     } senao {
-      escreva("Esse ano não foi um ano bissexto.")
+      escreva("Esse ano nï¿½o foi um ano bissexto.")
     }
     
   }

@@ -1,3 +1,6 @@
+// 51) FaÃ§a um aplicativo que leia o preÃ§o de 8 produtos. No final, mostre na tela 
+// qual foi o maior e qual foi o menor preÃ§o digitados.
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -9,7 +12,7 @@ programa {
     mnor = m.potencia(9999999, 9999999)
 
     enquanto(c <= 8) {
-      escreva("Digite o ", c, "º número: ")
+      escreva("Digite o ", c, "ï¿½ nï¿½mero: ")
       leia(num)
 
       se(num > mior) {
@@ -23,8 +26,8 @@ programa {
       c = c + 1
     }
 
-    escreva("O menor número foi: ", mnor, "\n")
-    escreva("O maior número foi: ", mior)
+    escreva("O menor nï¿½mero foi: ", mnor, "\n")
+    escreva("O maior nï¿½mero foi: ", mior)
     
   }
 }

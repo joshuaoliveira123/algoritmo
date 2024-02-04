@@ -1,12 +1,17 @@
+// 16) [DESAFIO] Escreva um programa para calcular a reduÃ§Ã£o do tempo de vida de um 
+// fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele 
+// jÃ¡ fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule 
+// quantos dias de vida um fumante perderÃ¡ e exiba o total em dias.
+
 programa {
   inclua biblioteca Matematica --> math
   funcao inicio() {
     real cigarros, anos, dez_minuto_dia, tempo_perdido, total_cigarros, ano_dia
 
-    escreva("Digite quantos cigarros você fuma por dia em média: ")
+    escreva("Digite quantos cigarros vocï¿½ fuma por dia em mï¿½dia: ")
     leia(cigarros)
 
-    escreva("Por quantos anos você faz isso?\n")
+    escreva("Por quantos anos vocï¿½ faz isso?\n")
     leia(anos)
 
     ano_dia = anos * 365
@@ -17,7 +22,7 @@ programa {
 
     total_cigarros = ano_dia * cigarros
 
-    escreva("Você ja perdeu ", math.arredondar(tempo_perdido, 2), " dias de vida por fumar ", math.arredondar(total_cigarros, 2), " em sua vida.")
+    escreva("Vocï¿½ ja perdeu ", math.arredondar(tempo_perdido, 2), " dias de vida por fumar ", math.arredondar(total_cigarros, 2), " em sua vida.")
 
   }
 }

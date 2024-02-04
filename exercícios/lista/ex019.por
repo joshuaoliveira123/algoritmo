@@ -1,3 +1,7 @@
+// 19) Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua 
+// mÃ©dia e mostre na tela. No final, analise a mÃ©dia e mostre se o aluno teve ou 
+// nÃ£o um bom aproveitamento (se ficou acima da mÃ©dia 7.0).
+
 programa {
   inclua biblioteca Matematica --> math
   funcao inicio() {
@@ -15,12 +19,12 @@ programa {
 
     media = (n1 + n2) / 2
 
-    escreva("Certo senhor(a) ", aluno, " você teve uma média de ", media, " pontos.\n")
+    escreva("Certo senhor(a) ", aluno, " vocï¿½ teve uma mï¿½dia de ", media, " pontos.\n")
 
     se(media >= 7){
-      escreva("Você foi APROVADO!")
+      escreva("Vocï¿½ foi APROVADO!")
     } senao {
-      escreva("Você foi REPROVADO!")
+      escreva("Vocï¿½ foi REPROVADO!")
     }
   }
 }

@@ -1,13 +1,16 @@
+// 13) FaÃ§a um algoritmo que leia o salÃ¡rio de um funcionÃ¡rio, calcule e mostre o 
+// seu novo salÃ¡rio, com 15% de aumento.
+
 programa {
   inclua biblioteca Matematica --> math
   funcao inicio() {
     real salario, aumento
 
-    escreva("Digite seu salário em reais: ")
+    escreva("Digite seu salï¿½rio em reais: ")
     leia(salario)
 
     aumento = salario * 1.15
 
-    escreva("O seu salário com um aumento de 15% é de R$ ", math.arredondar(aumento,2))
+    escreva("O seu salï¿½rio com um aumento de 15% ï¿½ de R$ ", math.arredondar(aumento,2))
   }
 }

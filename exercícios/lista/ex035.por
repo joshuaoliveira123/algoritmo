@@ -1,3 +1,17 @@
+// 35) Uma empresa de aluguel de carros precisa cobrar pelos seus serviÃ§os. O 
+// aluguel de um carro custa R$90 por dia para carro popular e R$150 por dia para 
+// carro de luxo. AlÃ©m disso, o cliente paga por Km percorrido. FaÃ§a um programa 
+// que leia o tipo de carro alugado (popular ou luxo), quantos dias de aluguel e 
+// quantos Km foram percorridos. No final mostre o preÃ§o a ser pago de acordo com a 
+// tabela a seguir: 
+//  
+  //  - Carros populares (aluguel de R$90 por dia) 
+      // - AtÃ© 100Km percorridos: R$0,20 por Km 
+      // - Acima de 100Km percorridos: R$0,10 por Km 
+  //  - Carros de luxo (aluguel de R$150 por dia) 
+      // - AtÃ© 200Km percorridos: R$0,30 por Km 
+      // - Acima de 200Km percorridos: R$0,25 por Km
+
 programa {
   inclua biblioteca Matematica --> m
   funcao inicio() {
@@ -8,14 +22,14 @@ programa {
     escreva("                               ALUGUEL DE CARROS                                  \n")
     escreva("+--------------------------------------------------------------------------------+\n\n")
     
-    escreva("TABELA DE PREÇOS:\n")
+    escreva("TABELA DE PREï¿½OS:\n")
     escreva("+----------------+----------------------+-----------------+----------------------+\n")
-    escreva("|     Carros     | Aluguel por dia (R$) |   Preço por quilômetro(km) rodado (R$) |\n")
-    escreva("| Carro popular  |          90          | até 100km: 0,20 | acima de 100km: 0,10 |\n")
-    escreva("| Carro de luxo  |          150         | até 200km: 0,30 | acima de 200km: 0,25 |\n")
+    escreva("|     Carros     | Aluguel por dia (R$) |   Preï¿½o por quilï¿½metro(km) rodado (R$) |\n")
+    escreva("| Carro popular  |          90          | atï¿½ 100km: 0,20 | acima de 100km: 0,10 |\n")
+    escreva("| Carro de luxo  |          150         | atï¿½ 200km: 0,30 | acima de 200km: 0,25 |\n")
     escreva("+----------------+----------------------+-----------------+----------------------+\n\n")
 
-    escreva("Escolha uma das opções: \n")
+    escreva("Escolha uma das opï¿½ï¿½es: \n")
     escreva("[1] - Carro popular\n")
     escreva("[2] - Carro de luxo\n")
     escreva("[~] - Cancelar\n")
@@ -27,10 +41,10 @@ programa {
     } senao {
       escreva("\n*** Time lapse ***\n\n")
 
-      escreva("Quantos dias você usou o carro? \n")
+      escreva("Quantos dias vocï¿½ usou o carro? \n")
       escreva("> ")
       leia(dias)
-      escreva("Quantos km você rodou? \n")
+      escreva("Quantos km vocï¿½ rodou? \n")
       escreva("> ")
       leia(km)
     }

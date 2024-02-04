@@ -1,20 +1,24 @@
+// 24) Fa√ßa um algoritmo que pergunte a dist√¢ncia que um passageiro deseja 
+// percorrer em Km. Calcule o pre√ßo da passagem, cobrando R$0.50 por Km para 
+// viagens at√© 200Km e R$0.45 para viagens mais longas.
+
 programa {
   inclua biblioteca Matematica
   funcao inicio() {
     inteiro km
     real pagar
 
-    escreva("Qual È a dist‚ncia da viagem em quilometros(km): ")
+    escreva("Qual ÔøΩ a distÔøΩncia da viagem em quilometros(km): ")
     leia(km)
 
     se(km <= 200){
       pagar = km * 0.5
 
-      escreva("O Total a pagar È de R$ ", pagar)
+      escreva("O Total a pagar ÔøΩ de R$ ", pagar)
     } senao {
       pagar = km * 0.45
 
-      escreva("O Total a pgar È de R$ ", Matematica.arredondar(pagar, 2))
+      escreva("O Total a pgar ÔøΩ de R$ ", Matematica.arredondar(pagar, 2))
     }
     
   }

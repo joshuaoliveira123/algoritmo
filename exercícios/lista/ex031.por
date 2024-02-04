@@ -1,3 +1,5 @@
+// 31) [DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura) 
+
 programa {
   inclua biblioteca Util --> u
   inclua biblioteca Matematica --> m
@@ -5,14 +7,14 @@ programa {
     inteiro a, c
     cadeia b, d, ven, per
 
-    ven = "Você venceu!\n"
-    per = "Você perdeu!\n"
+    ven = "Vocï¿½ venceu!\n"
+    per = "Vocï¿½ perdeu!\n"
 
     escreva("---------------------\n")
     escreva("Vamos jogar Jo-Ken-Po\n")
     escreva("---------------------\n\n")
 
-    escreva("Escolha uma opção\n")
+    escreva("Escolha uma opï¿½ï¿½o\n")
     escreva("[1] - pedra\n")
     escreva("[2] - papel\n")
     escreva("[3] - tesoura\n")
@@ -57,7 +59,7 @@ programa {
         escreva("ERRO\n")
     }
 
-    escreva("Você jogou: ", b, "\n")
+    escreva("Vocï¿½ jogou: ", b, "\n")
     escreva("CPU jogou: ", d, "\n")
 
     se(a == c) {

@@ -1,7 +1,14 @@
+// 5) FaÃ§a um programa que leia as duas notas de um aluno em uma matÃ©ria e mostre 
+// na tela a sua mÃ©dia na disciplina. 
+// Ex:  
+// Nota 1: 4.5 
+// Nota 2: 8.5 
+// A mÃ©dia entre 4.5 e 8.5 Ã© igual a 6.5 
+
 programa {
   real nota1, nota2, media
   funcao inicio() {
-    escreva("Vamos calcular uma média entre duas notas. \n")
+    escreva("Vamos calcular uma mï¿½dia entre duas notas. \n")
 
     escreva("Digite sua primeira nota: ")
     leia(nota1)
@@ -11,6 +18,6 @@ programa {
 
     media = (nota1 + nota2)/2
 
-    escreva("A média entre as notas ", nota1, " e ", nota2, " é de ", media)
+    escreva("A mï¿½dia entre as notas ", nota1, " e ", nota2, " ï¿½ de ", media)
   }
 }
