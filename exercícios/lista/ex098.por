@@ -30,13 +30,12 @@ programa {
       }
     }
     
-    escreva(" = ", superSomador(ini, fim))
+    escreva(" = ", superSomador(ini, fim, delta))
   }
 
 
-  funcao superSomador(inteiro a, inteiro b) {
+  funcao superSomador(inteiro a, inteiro b, inteiro d) {
     inteiro somaFinal = 0
-    inteiro d = b - a
     para(inteiro i=0;i<=d;i++) {
       somaFinal += (a + i)
     }
