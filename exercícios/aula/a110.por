@@ -31,6 +31,7 @@ programa {
     caracter simb = 'X'
     caracter posicao
     logico r
+    inteiro contador = 0
 
     mostrarVelha(m)
     // Repete enquanto o jogo não terminou
@@ -46,11 +47,11 @@ programa {
           escreva("Posição já está ocupada ou não existe.\n")
         }
       } enquanto(r == falso)
+      contador++
 
       simb = trocarJogador(simb)
       mostrarVelha(m)
-    } enquanto(terminouVelha(m) == falso)
-    escreva("Vencedor = ", trocarJogador(simb), "\n")
+    } enquanto(terminouVelha(m, contador, simb) == falso)
   }
 
   // Testa se a jogada é válida e preenche o tabuleiro
@@ -78,12 +79,13 @@ programa {
   }
 
   // Testa se o jogo terminou ou não
-  funcao logico terminouVelha(caracter m[][]) {
+  funcao logico terminouVelha(caracter m[][], inteiro contador, caracter simb) {
     logico situacao = falso
 
     // Termina Linha
     para(inteiro i=0;i<ORDEM_MATRIZ;i++) {
       se((m[i][0] == m[i][1]) e (m[i][2] == m[i][1])) {
+        escreva("Vencedor = ", trocarJogador(simb), "\n")
         situacao = verdadeiro
       }
     }
@@ -91,12 +93,20 @@ programa {
     // Termina Coluna
     para(inteiro i=0;i<ORDEM_MATRIZ;i++) {
       se((m[0][i] == m[1][i]) e (m[2][i] == m[1][i])) {
+        escreva("Vencedor = ", trocarJogador(simb), "\n")
         situacao = verdadeiro
       }
     }
 
     // Termina Diagonal
     se(((m[0][0] == m[1][1]) e (m[1][1] == m[2][2])) ou ((m[0][2] == m[1][1]) e (m[1][1] == m[2][0]))) {
+      escreva("Vencedor = ", trocarJogador(simb), "\n")
+      situacao = verdadeiro
+    }
+
+    // Termina Empate
+    se(contador == 9) {
+      escreva("EMPATE!\n")
       situacao = verdadeiro
     }
 
